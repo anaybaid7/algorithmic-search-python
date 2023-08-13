@@ -14,7 +14,7 @@ for page in range(1,39490):
 
                 questions = content.find_all('div', {'class':'s-post-summary js-post-summary' })
 
-                for item in questions:
+                for item in questions: 
                             title = item.find('a', {'class': 's-link'}).text
                             links = 'https://stackoverflow.com/' + item.find('a', {'class': 's-link'})['href']
                             description = item.find("div", {"class": "s-post-summary--content-excerpt"}).text.strip().replace('\n','')
